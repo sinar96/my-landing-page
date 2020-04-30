@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Landing Page</title>
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+            <a class="navbar-brand" href="#">Pondok Informatika Muslimah</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="register.html"><button type="button"  class="btn btn-primary">Daftar Sekarang</button></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+ 
+
+    <!-- WELCOME SECTION-->
+    <div id="home" class="mb-4">
+        <div class="container-fluid">
+            <div class="jumbotron text-center shadow-lg">
+                <h1 class="display-4">Ahlan Wa Sahlan !</h1>
+                <h5 class="display-4">Pondok Informatika Muslimah</h5>
+                <p class="lead"></p>
+                <hr class="my-4">
+                <p>Selamat datang di Web Pondok Informatika Muslimah </p>
+                <a class="btn btn-primary btn-lg" href="#about" role="button">Pelajari lebih lanjut</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- ABOUT SECTION -->
+    <div id="about" class="mt-5 pt-5">
+        <div class="container-fluid">
+            <div class="row mb-3 text-center">
+                <div class="col" id="kegiatan">
+                    <h2 class="pt-2 bold">KEGIATAN</h2>
+                </div>
+            </div>
+            <div class="card text-center mx-auto mb-4 shadow-lg p-3 mb-5 bg-white rounded" style="width: 30rem;">
+                <img src="assets/0.jpg" id="gambar" class="card-img-top" alt="...">
+                <div class="card-body ">
+                    <div class="card-title" id="caption">Tahfidz dan Tahsin</div>
+
+                    <a href="#about" class="btn btn-primary" onclick="sebelum()" target="_self">Sebelum</a>
+
+                    <a href="#about" class="btn btn-primary" onclick="ganti(0)">1</a>
+                    <a href="#about" class="btn btn-primary" onclick="ganti(1)">2</a>
+                    <a href="#about" class="btn btn-primary" onclick="ganti(2)">3</a>
+                    <a href="#about" class="btn btn-primary" onclick="ganti(3)">4</a>
+                    <a href="#about" class="btn btn-primary" onclick="ganti(4)">5</a>
+
+                    <a href="#about" class="btn btn-primary" onclick="sesudah()">Sesudah</a>
+                </div>
+            </div>
+            <div class="row mb-4">
+                <div class="col text-center">
+                    <h2>KELAS</h2>
+                </div>
+            </div>
+            <div class="row mb-4">
+                <div class="col-md">
+                    <div class="card shadow-lg p-3 mb-5 bg-white rounded">
+                        <img src="assets/web-programming.jpg" alt="" class="card-img-top gambar-kelas">
+                        <div class="card-body">
+                            <h2 class="card-title text-center">Web Programming</h2>
+                            <p class="card-text text-center">Kelas ini mempelajari tentang bagaimana membangun web,
+                                mulai dari frontend, backend hingga database</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md">
+                    <div class="card shadow-lg p-3 mb-5 bg-white rounded">
+                        <img src="assets/video-editing.png" alt="" class="card-img-top gambar-kelas">
+                        <div class="card-body">
+                            <h2 class="card-title text-center">Video Editing</h2>
+                            <p class="card-text text-center">Kelas ini mempelajari tentang bagaimana mengedit video
+                                dengan menggunakan aplikasi-aplikasi terbaik</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md">
+                    <div class="card shadow-lg p-3 mb-5 bg-white rounded">
+                        <img src="assets/desain-grafis.jpg" alt="" class="card-img-top gambar-kelas">
+                        <div class="card-body">
+                            <h2 class="card-title text-center">Desain Grafis</h2>
+                            <p class="card-text text-center">Kelas ini mempelajari tentang bagaimana mengedit gambar
+                                dengan menggunakan aplikasi-aplikasi terbaik</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER SECTION -->
+    <div id="footer" class="text-center pt-4">
+        <p>&copy; Sinar Mustika Ruslan 2020</p>
+    </div>
+
+    <script src="javascript/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
