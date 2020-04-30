@@ -9,14 +9,13 @@
 
     width: 100%;
     height: 700px;
-    
     padding: 20px;
-    position: sticky;
 }
 
 body{
     background-color: #f7f9fc;
 }
+
 .navbar {
     background-color: #FFC0CB;
 }
@@ -32,10 +31,6 @@ body{
 
 
 /*---- ABOUT SECTION ----> */
-#about{
-    position: sticky;
-}
-
 .gambar-kelas {
     width: 100%;
     height: 250px;
@@ -54,11 +49,7 @@ body{
     margin-top: 20px;
 }
 
-/* ----Media Query---- */
-@media screen and (max-width: 760px) {
-    
-    #home, #footer {
-        width: 100%;
-    }
-
+/* ---- Login and register html---- */
+::placeholder {
+    font-size: 80%;
 }
