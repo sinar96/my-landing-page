@@ -53,3 +53,12 @@ body{
     padding: 10px 0;
     margin-top: 20px;
 }
+
+/* ----Media Query---- */
+@media screen and (max-width: 760px) {
+    
+    #home, #footer {
+        width: 100%;
+    }
+
+}
